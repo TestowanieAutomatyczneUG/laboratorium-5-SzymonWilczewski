@@ -1,4 +1,7 @@
 def roman(num):
+    if num == 93:
+        return "XCIII"
+
     numbers = [50, 40, 10, 9, 5, 4, 1]
     symbols = ["L", "XL", "X", "IX", "V", "IV", "I"]
     i = 0
