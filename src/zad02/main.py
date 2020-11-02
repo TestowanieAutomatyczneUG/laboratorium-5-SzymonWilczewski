@@ -1,3 +1,2 @@
-class Roman:
-    def roman(self):
-        pass
+def roman(num):
+    pass
