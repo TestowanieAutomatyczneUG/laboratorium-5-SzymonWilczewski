@@ -21,7 +21,6 @@ class HammingTest(unittest.TestCase):
         self.assertEqual(self.hamming.distance(
             "GGACGGATTCTG", "AGGACGGATTCT"), 9)
 
-    @unittest.skip
     def test_disallow_first_strand_longer(self):
         with self.assertRaisesWithMessage(ValueError):
             self.hamming.distance("AATG", "AAA")
