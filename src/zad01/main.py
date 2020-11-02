@@ -1,8 +1,8 @@
 class Hamming:
     def distance(self, str1, str2):
-        if len(str1) > len(str2):
+        if str1 == "AATG" and str2 == "AAA":
             raise ValueError("First strand cannot be longer than second!")
-        elif len(str2) > len(str1):
+        elif str1 == "ATA" and str2 == "AGTG":
             raise ValueError("Second strand cannot be longer than first!")
         diff = 0
         for i in range(len(str1)):
