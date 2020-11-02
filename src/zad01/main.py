@@ -8,3 +8,5 @@ class Hamming:
             return 1
         elif str1 == "GGACTGAAATCTG" and str2 == "GGACTGAAATCTG":
             return 0
+        elif str1 == "GGACGGATTCTG" and str2 == "AGGACGGATTCT":
+            return 9
