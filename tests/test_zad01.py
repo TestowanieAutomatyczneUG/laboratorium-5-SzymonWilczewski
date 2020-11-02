@@ -4,10 +4,6 @@ from src.zad01.main import Hamming
 
 
 class HammingTest(unittest.TestCase):
-    def setUp(self):
-        self.hamming = Hamming()
-
-    @unittest.skip
     def test_empty_strands(self):
         self.assertEqual(self.hamming.distance("", ""), 0)
 
@@ -21,11 +17,13 @@ class HammingTest(unittest.TestCase):
 
     @unittest.skip
     def test_long_identical_strands(self):
-        self.assertEqual(self.hamming.distance("GGACTGAAATCTG", "GGACTGAAATCTG"), 0)
+        self.assertEqual(self.hamming.distance(
+            "GGACTGAAATCTG", "GGACTGAAATCTG"), 0)
 
     @unittest.skip
     def test_long_different_strands(self):
-        self.assertEqual(self.hamming.distance("GGACGGATTCTG", "AGGACGGATTCT"), 9)
+        self.assertEqual(self.hamming.distance(
+            "GGACGGATTCTG", "AGGACGGATTCT"), 9)
 
     @unittest.skip
     def test_disallow_first_strand_longer(self):
@@ -47,11 +45,9 @@ class HammingTest(unittest.TestCase):
         with self.assertRaisesWithMessage(ValueError):
             self.hamming.distance("G", "")
 
-    def tearDown(self):
-        self.hamming = None
-
     # Utility functions
     def setUp(self):
+        self.hamming = Hamming()
         try:
             self.assertRaisesRegex
         except AttributeError:
@@ -59,3 +55,6 @@ class HammingTest(unittest.TestCase):
 
     def assertRaisesWithMessage(self, exception):
         return self.assertRaisesRegex(exception, r".+")
+
+    def tearDown(self):
+        self.hamming = None
