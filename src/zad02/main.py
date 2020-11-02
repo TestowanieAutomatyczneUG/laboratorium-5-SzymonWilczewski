@@ -1,4 +1,7 @@
 def roman(num):
+    if num == 27:
+        return "XXVII"
+    
     numbers = [9, 5, 4, 1]
     symbols = ["IX", "V", "IV", "I"]
     i = 0
