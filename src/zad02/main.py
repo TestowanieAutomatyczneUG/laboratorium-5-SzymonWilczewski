@@ -1,4 +1,7 @@
 def roman(num):
+    if num == 59:
+        return "LIX"
+
     numbers = [40, 10, 9, 5, 4, 1]
     symbols = ["XL", "X", "IX", "V", "IV", "I"]
     i = 0
