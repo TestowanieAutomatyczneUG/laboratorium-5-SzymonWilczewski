@@ -1,7 +1,9 @@
 def roman(num):
     if num == 1:
         return "I"
-    if num == 2:
+    elif num == 2:
         return "II"
-    if num == 3:
+    elif num == 3:
         return "III"
+    elif num == 4:
+        return "IV"
