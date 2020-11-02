@@ -1,15 +1,12 @@
 def roman(num):
-    if num == 1:
-        return "I"
-    elif num == 2:
-        return "II"
-    elif num == 3:
-        return "III"
-    elif num == 4:
-        return "IV"
-    elif num == 5:
-        return "V"
-    elif num == 6:
-        return "VI"
-    elif num == 9:
-        return "IX"
+    numbers = [9, 5, 4, 1]
+    symbols = ["IX", "V", "IV", "I"]
+    i = 0
+    roman_number = ""
+
+    while num:
+        for _ in range(num // numbers[i]):
+            roman_number += symbols[i]
+            num -= numbers[i]
+        i += 1
+    return roman_number
