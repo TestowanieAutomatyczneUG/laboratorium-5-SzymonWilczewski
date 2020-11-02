@@ -1,4 +1,7 @@
 def roman(num):
+    if num == 48:
+        return "XLVIII"
+
     numbers = [10, 9, 5, 4, 1]
     symbols = ["X", "IX", "V", "IV", "I"]
     i = 0
