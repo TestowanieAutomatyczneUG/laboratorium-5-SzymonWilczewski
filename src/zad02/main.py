@@ -1,9 +1,6 @@
 def roman(num):
-    if num == 402:
-        return "CDII"
-
-    numbers = [100, 90, 50, 40, 10, 9, 5, 4, 1]
-    symbols = ["C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
+    numbers = [400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
+    symbols = ["CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
     i = 0
     roman_number = ""
 
