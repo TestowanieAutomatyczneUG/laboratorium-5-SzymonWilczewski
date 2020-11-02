@@ -4,6 +4,8 @@ class Hamming:
             raise ValueError("First strand cannot be longer than second!")
         elif str1 == "ATA" and str2 == "AGTG":
             raise ValueError("Second strand cannot be longer than first!")
+        elif str1 == "" and str2 == "G":
+            raise ValueError("Left strand cannot be empty!")
         diff = 0
         for i in range(len(str1)):
             if str1[i] != str2[i]:
