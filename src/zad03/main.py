@@ -16,7 +16,7 @@ class Song:
     ]
 
     def verse(self, num):
-        return self.lyrics[num - 1]
+        return self.lyrics[int(num) - 1]
 
     def verses(self, num1, num2):
         return self.lyrics[num1 - 1:num2]
