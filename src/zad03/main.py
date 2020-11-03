@@ -22,4 +22,4 @@ class Song:
         return self.lyrics[num1 - 1:num2]
 
     def wholeSong(self):
-        pass
+        return self.lyrics
