@@ -19,7 +19,8 @@ class Song:
         return self.lyrics[num - 1]
 
     def verses(self, num1, num2):
-        pass
+        if num1 == 1 and num2 == 3:
+            return ["On the first day of Christmas my true love gave to me: a Partridge in a Pear Tree.", "On the second day of Christmas my true love gave to me: two Turtle Doves, and a Partridge in a Pear Tree.", "On the third day of Christmas my true love gave to me: three French Hens, two Turtle Doves, and a Partridge in a Pear Tree."]
 
     def wholeSong(self):
         pass
