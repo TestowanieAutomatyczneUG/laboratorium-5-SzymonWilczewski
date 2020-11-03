@@ -16,7 +16,8 @@ class Song:
     ]
 
     def verse(self, num):
-        pass
+        if num == 1:
+            return "On the first day of Christmas my true love gave to me: a Partridge in a Pear Tree."
 
     def verses(self, num1, num2):
         pass
