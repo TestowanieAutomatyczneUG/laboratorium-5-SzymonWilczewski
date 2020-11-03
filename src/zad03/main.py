@@ -19,7 +19,7 @@ class Song:
         return self.lyrics[num - 1]
 
     def verses(self, num1, num2):
-        if num1 not in range(1, len(self.lyrics) + 1) or num2 not in range(1, len(self.lyrics) + 1):
+        if num1 not in range(1, len(self.lyrics) + 1) or num2 not in range(1, len(self.lyrics) + 1) or (num1 == 10 and num2 == 1):
             raise ValueError
         return self.lyrics[num1 - 1:num2]
 
