@@ -63,7 +63,6 @@ class SongTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.song.verses(-1, 1)
 
-    @unittest.skip
     def test_verses_wrong_second_value(self):
         with self.assertRaises(ValueError):
             self.song.verses(1, 100)
