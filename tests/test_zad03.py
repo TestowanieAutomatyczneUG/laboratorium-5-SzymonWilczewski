@@ -4,7 +4,6 @@ from src.zad03.main import Song
 
 
 class SongTest(unittest.TestCase):
-    @unittest.skip
     def test_verse_1(self):
         self.assertEqual(self.song.verse(1), "On the first day of Christmas my true love gave to me: a Partridge in a Pear Tree.")
 
