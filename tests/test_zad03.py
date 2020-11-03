@@ -67,7 +67,6 @@ class SongTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.song.verses(1, 100)
 
-    @unittest.skip
     def test_verses_first_value_bigger_than_second(self):
         with self.assertRaises(ValueError):
             self.song.verses(10, 1)
