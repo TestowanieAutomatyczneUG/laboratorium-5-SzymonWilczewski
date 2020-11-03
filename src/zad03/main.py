@@ -19,6 +19,8 @@ class Song:
         return self.lyrics[num - 1]
 
     def verses(self, num1, num2):
+        if num1 == -1:
+            raise ValueError
         return self.lyrics[num1 - 1:num2]
 
     def wholeSong(self):
